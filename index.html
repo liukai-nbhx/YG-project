@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>车间巡检不良分析系统</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 18px;
+    padding: 48px 56px;
+    text-align: center;
+    max-width: 520px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .logo { font-size: 15px; letter-spacing: 2px; opacity: 0.85; margin-bottom: 14px; }
+  h1 { font-size: 28px; margin-bottom: 18px; font-weight: 700; }
+  p.desc { font-size: 15px; line-height: 1.8; opacity: 0.9; margin-bottom: 30px; }
+  .btn {
+    display: inline-block;
+    background: #fff;
+    color: #1e3c72;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 30px;
+    transition: transform .15s ease, box-shadow .15s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+  .tip { margin-top: 22px; font-size: 12px; opacity: 0.6; }
+  .spinner {
+    margin: 0 auto 18px;
+    width: 38px; height: 38px;
+    border: 4px solid rgba(255,255,255,0.25);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">华翔内饰宁波工厂</div>
+    <div class="spinner"></div>
+    <h1>车间巡检不良分析系统</h1>
+    <p class="desc">
+      纯前端质量管理工具，支持数据录入、Excel 导入、缺陷代码管理与可视化统计。<br>
+      正在进入系统，请稍候…
+    </p>
+    <a class="btn" href="车间巡检不良分析系统.html">直接进入系统 →</a>
+    <div class="tip">若未自动跳转，请点击上方按钮</div>
+  </div>
+  <script>
+    // 2 秒后自动跳转到主系统文件
+    setTimeout(function () {
+      window.location.href = "车间巡检不良分析系统.html";
+    }, 2000);
+  </script>
+</body>
+</html>
